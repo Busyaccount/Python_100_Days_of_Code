@@ -1,0 +1,23 @@
+# 🚨 Don't change the code below 👇
+age = input("What is your current age? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+#D_age is the age that you expect to die
+D_age = 90
+d= D_age * 365
+w = D_age * 52
+m = D_age * 12
+
+# dL is days used
+age_num = int(age)
+dL= age_num * 365
+wL = age_num * 52
+mL = age_num * 12
+
+x = d - dL
+y = w - wL
+z = m - mL
+
+
+print(f"You have {x} days,{y} weeks, and {z} months left")
