@@ -1,0 +1,36 @@
+# 🚨 Don't change the code below 👇
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+#maths
+T_count = str.lower(name1).count("t") + str.lower(name2).count("t")
+R_count = str.lower(name1).count("r") + str.lower(name2).count("r")
+U_count = str.lower(name1).count("u") + str.lower(name2).count("u")
+E_count_true = str.lower(name1).count("e") + str.lower(name2).count("e")
+
+L_count = str.lower(name1).count("l") + str.lower(name2).count("l")
+O_count = str.lower(name1).count("o") + str.lower(name2).count("o")
+V_count = str.lower(name1).count("v") + str.lower(name2).count("v")
+E_count_Love = str.lower(name1).count("e") + str.lower(name2).count("e")
+
+True_total = T_count + R_count + U_count + E_count_true
+Love_total = L_count + O_count + V_count + E_count_Love
+
+test_total= int(f"{True_total}{Love_total}")
+
+#if statements
+
+if test_total < 10 or test_total > 90:
+    print(f"Your score is {test_total}, you go together like coke and mentos.")
+elif test_total >= 40 and test_total <= 50:
+    print(f"Your score is {test_total}, you are alright together.")
+else:
+    print(f"Your score is {test_total}")
+
+
+#random love calculator based of popular quiz on buzzfeed
+
