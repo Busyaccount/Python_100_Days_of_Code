@@ -1,0 +1,51 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+Encounter_one = str.lower(input("You land on treasure island. There are two trails one to the left and one to the right. The left trail is dark and shaded by trees. The right trail open with palm trees ove hanging. Which way do you go right or left\n"))
+
+
+
+if Encounter_one == "right":
+    print("You walk to the right trail and as soon as push through the ground slips under you and you fall into a hole filled with spikes. GAME OVER!")
+elif Encounter_one == "left":
+    Encounter_two = str.lower(input("You go left and make it pass the tree to find a large pond. Across this pond you see three large doors. A boat is slowly coming to you. Do you swim accoss or wait for the boat to come to you? Swim or wait\n"))
+    if Encounter_two == "swim":
+        print("You start to swim. You get about half way and then fish start to tickle you feet then start to bite your feet. A shark comes out of no where and tears you apart. GAME OVER!")
+    elif Encounter_two == "wait":
+        Encounter_three = str.lower(input(" You get to the three doors, one is colored red, one colored yellow , and the last one colored blue. Where door do you open red, yellow, blue\n"))
+        if Encounter_three == "yellow":
+            print("You open the yellow door to find a room a treasure. Now you must find your way back. You found the treasure")
+        else:
+            print("You open the door and fire meets you from the door burning you to a crisp! Game Over!")
+    else:
+        print("You went home! Next time type the right commands")
+else:
+    print("You went home! Next time type the right commands")
+    
+    
+#
