@@ -68,3 +68,5 @@ elif user_input == 2 and AI_rps == 2:
     print(rps_list[user_input])
     print("Computer chooses:\n" + rps_list[AI_rps])
     print("Its a draw!")
+else:
+    print("Invaild input you lose!")
