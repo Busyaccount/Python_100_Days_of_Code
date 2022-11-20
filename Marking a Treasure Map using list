@@ -1,0 +1,27 @@
+# 🚨 Don't change the code below 👇
+row1 = ["⬜️","️⬜️","️⬜️"]
+row2 = ["⬜️","⬜️","️⬜️"]
+row3 = ["⬜️️","⬜️️","⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this row 👇
+#Getting the numbers out of the string using a unpack function part of python --- [*string] ----
+numbers_list = [*position]
+
+position_vertical_num = int(numbers_list[0]) - 1
+position_horizontal_num = int(numbers_list[1]) - 1 
+
+#nesting the list operations
+horizontal_row = map[position_horizontal_num]
+horizontal_row[position_vertical_num] = "X"
+
+
+
+
+#Write your code above this row 👆
+
+# 🚨 Don't change the code below 👇
+print(f"{row1}\n{row2}\n{row3}")
